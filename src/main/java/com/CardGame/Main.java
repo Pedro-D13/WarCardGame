@@ -1,7 +1,14 @@
-package com.company;
+package com.CardGame;
 
-import com.company.deck.DeckBuilder;
-import com.company.deck.DeckOfCards;
+//@SpringBootApplication
+//public class Main {
+//    public static void main(String[] args){
+//        SpringApplication.run(Main.class,args);
+//    }
+//}
+
+import com.CardGame.Deck.DeckBuilder;
+import com.CardGame.Deck.DeckOfCards;
 
 public class Main {
     public static void main(String[] args) {

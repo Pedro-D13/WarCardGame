@@ -1,19 +1,19 @@
-package com.company.deck;
+package com.CardGame.Deck;
 
-import com.company.Cards;
+import com.CardGame.PlayingCard.Card;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
 public class DeckOfCards {
-    private ArrayList<Cards> deckOfCards;
+    private ArrayList<Card> deckOfCards;
 
-    public DeckOfCards(ArrayList<Cards> deckOfCards) {
+    public DeckOfCards(ArrayList<Card> deckOfCards) {
         this.deckOfCards = deckOfCards;
     }
 
-    public ArrayList<Cards> getDeckOfCards() {
+    public ArrayList<Card> getDeckOfCards() {
         return deckOfCards;
     }
 

@@ -1,47 +1,49 @@
-package com.company;
+package com.CardGame.PlayingCard;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
+
 public enum Suit {
-    HEARTS("hearts") {
+    HEARTS("HEARTS") {
         @Override
         public String getSuit() {
             return "hearts";
         }
     },
-    SPADES("spades") {
+    SPADES("SPADES") {
         @Override
         public String getSuit() {
             return "spades";
         }
 
     },
-    CLUBS("clubs") {
+        CLUBS("CLUBS") {
         @Override
         public String getSuit() {
             return "clubs";
         }
     },
-    DIAMONDS("clubs") {
+    DIAMONDS("DIAMONDS") {
         @Override
         public String getSuit() {
-            return "clubs";
+            return "diamonds";
         }
     };
 
     private String currentSuit;
 
     Suit(String suit) {
-        this.currentSuit = suit;
+        this.currentSuit = suit.toUpperCase();
     }
 
 
     public String getSuit() {
-        return this.currentSuit;
+        return this.currentSuit.toUpperCase();
     }
 
     static public ArrayList<Suit> getAllSuits() {
-        return new ArrayList<Suit>(Arrays.asList(HEARTS, DIAMONDS, SPADES, CLUBS));
+        return new ArrayList<>(Arrays.asList(HEARTS, DIAMONDS, SPADES, CLUBS));
     }
 }
